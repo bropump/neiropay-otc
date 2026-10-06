@@ -2,7 +2,7 @@
 
 [Open the live desk](https://otc.neiropay.app) · [Agent quickstart: run, deploy, and trade](docs/AGENT_GUIDE.md)
 
-Private source repository: `bropump/neiropay-otc`. Credentials and settlement keys are never stored here.
+Public source repository: `bropump/neiropay-otc`. Credentials and settlement keys are never stored here.
 
 A bilateral OTC desk for NEIRO Bropump against USDC or SOL on Solana mainnet. Uses the existing Solana Foundation DvP program; no new smart contract or token is deployed.
 

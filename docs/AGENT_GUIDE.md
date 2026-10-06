@@ -13,7 +13,7 @@ cd neiropay-otc
 npm ci
 ```
 
-Read `AGENTS.md` before editing. This repository is private. The production Cloudflare account, Worker, domain, and D1 database are already configured in `wrangler.jsonc`; their IDs are identifiers, not credentials.
+Read `AGENTS.md` before editing. This repository is public. The production Cloudflare account, Worker, domain, and D1 database are already configured in `wrangler.jsonc`; their IDs are identifiers, not credentials.
 
 ## 2. Configure locally
 
@@ -140,7 +140,7 @@ Use the same authority for local configuration and the deployed Worker. Configur
 5. Once both sides are funded, one trader requests settlement. The backend co-signs the agreed swap, and that trader signs and submits it as fee payer. Both token transfers succeed together or neither does.
 6. View the finalized receipt on Orb. SOL payouts/refunds are **wrapped SOL**; the explicit action in **My trades** unwraps the connected wallet's entire WSOL account.
 
-The service holds the settlement key, not user wallet keys. It cannot choose arbitrary payout recipients through this app's settlement path. User transactions still require wallet approval. Trade details are public on Solana even though the source repository is private.
+The service holds the settlement key, not user wallet keys. It cannot choose arbitrary payout recipients through this app's settlement path. User transactions still require wallet approval. Trade details are public on Solana. The source repository is also public; credentials remain private.
 
 ## 7. Browser-agent use
 
