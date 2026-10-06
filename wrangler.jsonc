@@ -1,0 +1,12 @@
+{
+ "name":"neiropay-otc",
+ "main":"worker/index.ts",
+ "account_id":"cecaeb19be498963214448db6dfc77fa",
+ "compatibility_date":"2026-10-06",
+ "compatibility_flags":["nodejs_compat"],
+ "workers_dev":true,
+ "routes":[{"pattern":"otc.neiropay.app","custom_domain":true}],
+ "assets":{"directory":"./dist","binding":"ASSETS","not_found_handling":"single-page-application","run_worker_first":["/api/*"]},
+ "ratelimits":[{"name":"RATE_LIMITER","namespace_id":"1006","simple":{"limit":120,"period":60}}],
+ "d1_databases":[{"binding":"DB","database_name":"neiropay-otc","database_id":"fff6c939-089c-48b8-8e8c-dc13d5ea9936"}]
+}

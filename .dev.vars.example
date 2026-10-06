@@ -1,0 +1,2 @@
+RPC_URL=https://your-mainnet-rpc.example
+SETTLEMENT_SECRET=[your_dedicated_64_byte_solana_secret_key]

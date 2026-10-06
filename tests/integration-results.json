@@ -1,0 +1,32 @@
+{
+  "network": "local Surfpool mainnet fork",
+  "program": "dvp34bdbcEm4f4FCUjGV4mDAkDshaQR4LkK8fdcsyZq",
+  "tests": [
+    {
+      "name": "USDC: create → both deposits → authority co-sign → exact atomic payouts and receipt",
+      "pass": true,
+      "signature": "5HVHwVCHEgEsQP82h8AVhUVTgZnbHyZ7k45e3c3wdBc2aNb5o2MzWWG9LPARrt8KP2VZQwVc6ZzuiAgdRAAcnrvJ"
+    },
+    {
+      "name": "USDC: recover a late deposit after closure",
+      "pass": true
+    },
+    {
+      "name": "SOL: create → both deposits → authority co-sign → exact atomic payouts and receipt",
+      "pass": true,
+      "signature": "4EnzU51z4Eb5QSS8pJgJ7gRkt8FAmF8WaZjiP3yywXZGTiNeo7GLAuAuTz6TBdQi2TpnjmKkfBgH4FDzL7PL2tkB"
+    },
+    {
+      "name": "SOL: recover a late deposit after closure",
+      "pass": true
+    },
+    {
+      "name": "Buy direction, reclaim before settlement, underfunding rejection, and full cancellation refund",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid precision and unauthorized wallet actions",
+      "pass": true
+    }
+  ]
+}

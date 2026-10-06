@@ -1,0 +1,352 @@
+{
+  "createDvp": {
+    "accounts": [
+      {
+        "name": "payer",
+        "isSigner": true,
+        "isWritable": true
+      },
+      {
+        "name": "swapDvp",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "nonceTombstone",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "settlementAuthority",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "userA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "userB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "mintA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "mintB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "dvpAtaA",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "dvpAtaB",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "systemProgram",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "tokenProgramA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "tokenProgramB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "associatedTokenProgram",
+        "isSigner": false,
+        "isWritable": false
+      }
+    ],
+    "discriminator": 0
+  },
+  "reclaimDvp": {
+    "accounts": [
+      {
+        "name": "signer",
+        "isSigner": true,
+        "isWritable": false
+      },
+      {
+        "name": "swapDvp",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "mint",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "dvpSourceAta",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "signerDestAta",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "tokenProgram",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "memoProgram",
+        "isSigner": false,
+        "isWritable": false
+      }
+    ],
+    "discriminator": 1
+  },
+  "settleDvp": {
+    "accounts": [
+      {
+        "name": "settlementAuthority",
+        "isSigner": true,
+        "isWritable": true
+      },
+      {
+        "name": "swapDvp",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "mintA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "mintB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "dvpAtaA",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "dvpAtaB",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "userADestinationAtaB",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "userBDestinationAtaA",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "userAAtaA",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "userBAtaB",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "tokenProgramA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "tokenProgramB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "memoProgram",
+        "isSigner": false,
+        "isWritable": false
+      }
+    ],
+    "discriminator": 2
+  },
+  "cancelDvp": {
+    "accounts": [
+      {
+        "name": "settlementAuthority",
+        "isSigner": true,
+        "isWritable": true
+      },
+      {
+        "name": "swapDvp",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "mintA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "mintB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "dvpAtaA",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "dvpAtaB",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "userAAtaA",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "userBAtaB",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "tokenProgramA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "tokenProgramB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "memoProgram",
+        "isSigner": false,
+        "isWritable": false
+      }
+    ],
+    "discriminator": 3
+  },
+  "rejectDvp": {
+    "accounts": [
+      {
+        "name": "signer",
+        "isSigner": true,
+        "isWritable": true
+      },
+      {
+        "name": "swapDvp",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "mintA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "mintB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "dvpAtaA",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "dvpAtaB",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "userAAtaA",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "userBAtaB",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "tokenProgramA",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "tokenProgramB",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "memoProgram",
+        "isSigner": false,
+        "isWritable": false
+      }
+    ],
+    "discriminator": 4
+  },
+  "recoverDvp": {
+    "accounts": [
+      {
+        "name": "signer",
+        "isSigner": true,
+        "isWritable": true
+      },
+      {
+        "name": "swapDvp",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "nonceTombstone",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "mint",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "dvpEscrowAta",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "signerDestAta",
+        "isSigner": false,
+        "isWritable": true
+      },
+      {
+        "name": "tokenProgram",
+        "isSigner": false,
+        "isWritable": false
+      },
+      {
+        "name": "memoProgram",
+        "isSigner": false,
+        "isWritable": false
+      }
+    ],
+    "discriminator": 5
+  }
+}
